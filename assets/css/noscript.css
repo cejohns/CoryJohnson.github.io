@@ -41,3 +41,29 @@
 		transform: none !important;
 		opacity: 1 !important;
 	}
+
+
+	/* Flexbox styling for the layout */
+/* Flexbox styling for side-by-side alignment */
+#intro .inner .content {
+    display: flex;
+    align-items: center; /* Centers image and text vertically */
+    justify-content: center; /* Aligns content to the left */
+}
+
+/* Image styling */
+#intro .inner .image {
+    margin-right: 20px; /* Space between image and text */
+}
+
+#intro .inner .image img {
+    max-width: 100px; /* Adjust image size as needed */
+    border-radius: 50%; /* Optional: makes the image circular */
+	float: left;
+}
+
+/* Text container styling */
+#intro .inner .text {
+    max-width: 600px; /* Adjust width of text container if necessary */
+	float: left;
+}
