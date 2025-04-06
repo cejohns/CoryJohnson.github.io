@@ -1,0 +1,25 @@
+/* Add specific header styles here if needed */
+#header {
+    background: #1e1e1e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #header .title {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #header nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  #header nav a {
+    color: white;
+    text-decoration: none;
+  }

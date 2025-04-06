@@ -1,0 +1,26 @@
+#footer {
+    background: #2a2a2a;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  #footer .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  #footer .menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  #footer a {
+    color: #4eb980;
+    text-decoration: none;
+  }
