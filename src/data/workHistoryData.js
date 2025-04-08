@@ -1,7 +1,7 @@
 const workHistoryData = [
   {
     id: 1,
-    logo: '/images/SGS.webp',
+    logo: "SGS.webp",
     company: 'Freelance',
     role: 'Freelance Software Developer',
     description: [
@@ -9,11 +9,11 @@ const workHistoryData = [
       'Conducted team meetings via Discord.',
       'Created Unit tests for at least five projects.'
     ],
-    date: 'August 2023 - Current'
+    date: 'August 2023 - Current' 
   },
   {
     id: 2,
-    logo: '/images/spiritaero_logo.webp',
+    logo: "spiritaero_logo.webp",
     company: 'Spirit AeroSystems',
     role: 'Composite Technician',
     description: [
@@ -27,7 +27,7 @@ const workHistoryData = [
   },
   {
     id: 3,
-    logo: '/images/gensparklogo.webp',
+    logo: "gensparklogo.webp",
     company: 'GenSpark',
     role: 'Software Developer',
     description: [
@@ -39,7 +39,7 @@ const workHistoryData = [
   },
   {
     id: 4,
-    logo: '/images/REV.webp',
+    logo: "REV.webp",
     company: 'Reventure',
     role: 'Software Developer',
     description: [
@@ -50,7 +50,7 @@ const workHistoryData = [
   },
   {
     id: 5,
-    logo: '/images/KTEK.webp',
+    logo: "KTEK.webp",
     company: 'K-Tek Resourcing',
     role: 'IT Analyst',
     description: [
@@ -62,7 +62,7 @@ const workHistoryData = [
   },
   {
     id: 6,
-    logo: '/images/HCL2.webp',
+    logo: "HCL2.webp",
     company: 'HCL America',
     role: 'IT Analyst',
     description: [
@@ -72,7 +72,7 @@ const workHistoryData = [
   },
   {
     id: 7,
-    logo: '/images/SGS.webp',
+    logo: "SGS.webp",
     company: 'Southstar Games Studio',
     role: 'Software Developer',
     description: [
@@ -86,7 +86,7 @@ const workHistoryData = [
   },
   {
     id: 8,
-    logo: '/images/AMAZON.webp',
+    logo: "Amazon-Logo-Black.webp",
     company: 'Amazon',
     role: 'Warehouse Associate',
     description: [
@@ -96,7 +96,7 @@ const workHistoryData = [
   },
   {
     id: 9,
-    logo: '/images/UMClogo.webp',
+    logo: "UMClogo.webp",
     company: 'Uchiyama Manufacturing Corp.',
     role: 'Machine Operator',
     description: [
@@ -107,7 +107,7 @@ const workHistoryData = [
   },
   {
     id: 10,
-    logo: '/images/SAMS.webp',
+    logo: "SAMS.webp",
     company: 'Sam\'s Club',
     role: 'Sales Associate',
     description: [
@@ -117,7 +117,7 @@ const workHistoryData = [
   },
   {
     id: 11,
-    logo: '/images/WCC.webp',
+    logo: "WCC.webp",
     company: 'Wayne Community College',
     role: 'Pre-Curriculum Math Teacher',
     description: [
@@ -127,7 +127,7 @@ const workHistoryData = [
   },
   {
     id: 12,
-    logo: '/images/WCC.webp',
+    logo: "WCC.webp",
     company: 'Wayne Community College',
     role: 'College Peer Tutor (Mathematics)',
     description: [
