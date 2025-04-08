@@ -63,12 +63,13 @@ export default function ResumeSection() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
         >
-      <Button className="group ...">
-  <Link to="/workHistory" className="flex items-center">
+  <Button className="group">
+  <Link to="/workhistory" className="flex items-center">
     View Full Experience 
     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
   </Link>
 </Button>
+
 
         </motion.div>
       </motion.div>
