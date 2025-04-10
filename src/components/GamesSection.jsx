@@ -21,7 +21,7 @@ export default function GamesSection() {
     >
       <motion.div className="w-full md:w-1/2">
         <motion.img
-          src="/images/pic02.jpg"
+          src="/images/1-game-developer-2.webp"
           alt="Published Games"
           className="w-full h-auto rounded-xl shadow-2xl"
           whileHover={{ scale: 1.02 }}

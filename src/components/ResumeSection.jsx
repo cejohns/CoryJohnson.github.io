@@ -27,7 +27,7 @@ export default function ResumeSection() {
         transition={{ type: "spring", stiffness: 100 }}
       >
         <motion.img
-          src="/images/pic01.jpg"
+          src="/images/OIP.jpg"
           alt="Professional Experience"
           className="w-full h-auto max-h-[80vh] object-cover rounded-xl shadow-2xl"
           whileHover={{ scale: 1.02 }}
