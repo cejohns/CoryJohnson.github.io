@@ -1,7 +1,7 @@
 const workHistoryData = [
   {
     id: 1,
-    logo: "SGS.webp",
+    logo: "SGS.webp" ,
     company: 'Freelance',
     role: 'Freelance Software Developer',
     description: [
@@ -27,7 +27,7 @@ const workHistoryData = [
   },
   {
     id: 3,
-    logo: "gensparklogo.webp",
+    logo: "qensparklogo.webp",
     company: 'GenSpark',
     role: 'Software Developer',
     description: [
@@ -107,7 +107,7 @@ const workHistoryData = [
   },
   {
     id: 10,
-    logo: "SAMS.webp",
+    logo: "KTEK.webp",
     company: 'Sam\'s Club',
     role: 'Sales Associate',
     description: [

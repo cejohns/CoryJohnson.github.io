@@ -2,8 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import WorkHistoryTable from './WorkHistoryTable'; // if it's in the same folder
-//import '../../assets/css/main.css';
-//import '../../assets/css/noscript.css';
+
 
 
 const WorkHistory = () => {

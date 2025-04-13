@@ -20,12 +20,13 @@ export default function GamesSection() {
       transition={{ duration: 0.5 }}
     >
       <motion.div className="w-full md:w-1/2">
-        <motion.img
-          src="/images/1-game-developer-2.webp"
-          alt="Published Games"
-          className="w-full h-auto rounded-xl shadow-2xl"
-          whileHover={{ scale: 1.02 }}
-        />
+      <motion.img
+  src={`${process.env.PUBLIC_URL}/images/1-game-developer-2.webp`}
+  alt="Published Games"
+  className="w-full h-auto rounded-xl shadow-2xl"
+  whileHover={{ scale: 1.02 }}
+/>
+
       </motion.div>
 
       <div className="w-full md:w-1/2 md:pl-12 mt-12 md:mt-0">

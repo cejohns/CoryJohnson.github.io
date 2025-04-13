@@ -5,7 +5,8 @@ export default function HeroSection() {
         {/* Profile Picture */}
         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500">
           <img
-            src="/images/Cory.webp" // <- change this to your actual image path
+            src={`${process.env.PUBLIC_URL}/images/Cory.webp`}
+            // <- change this to your actual image path
             alt="Cory Johns"
             className="w-full h-full object-cover"
           />

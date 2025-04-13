@@ -28,7 +28,7 @@ export default function ProjectsSection() {
         transition={{ type: "spring", stiffness: 100 }}
       >
         <motion.img
-          src="/images/download.webp"
+          src={`${process.env.PUBLIC_URL}/images/download.webp`}
           alt="Code Projects"
           className="w-full h-auto max-h-[80vh] object-cover rounded-xl shadow-2xl"
           whileHover={{ scale: 1.02 }}
