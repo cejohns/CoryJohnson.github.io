@@ -7,7 +7,7 @@ const WorkHistoryTable = () => {
       {workHistoryData.map((job) => (
         <div key={job.id} className="job-card">
           <img
-            src={`/images/${job.logo}`} // ✅ This uses the public folder
+             src={job.logo} //src={`/images/${job.logo}`} // ✅ This uses the public folder
             alt={`${job.company} logo`}
             className="company-logo"
           />

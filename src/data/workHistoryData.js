@@ -1,7 +1,7 @@
 const workHistoryData = [
   {
     id: 1,
-    logo: "SGS.webp" ,
+    logo: `${process.env.PUBLIC_URL}/images/SGS.webp` ,
     company: 'Freelance',
     role: 'Freelance Software Developer',
     description: [
@@ -13,7 +13,7 @@ const workHistoryData = [
   },
   {
     id: 2,
-    logo: "spiritaero_logo.webp",
+    logo: `${process.env.PUBLIC_URL}/images/spiritaero_logo.webp`,
     company: 'Spirit AeroSystems',
     role: 'Composite Technician',
     description: [
@@ -27,7 +27,7 @@ const workHistoryData = [
   },
   {
     id: 3,
-    logo: "qensparklogo.webp",
+    logo: `${process.env.PUBLIC_URL}/images/gensparklogo.webp`,
     company: 'GenSpark',
     role: 'Software Developer',
     description: [
@@ -39,7 +39,7 @@ const workHistoryData = [
   },
   {
     id: 4,
-    logo: "REV.webp",
+    logo: `${process.env.PUBLIC_URL}/images/REV.webp`,
     company: 'Reventure',
     role: 'Software Developer',
     description: [
@@ -50,7 +50,7 @@ const workHistoryData = [
   },
   {
     id: 5,
-    logo: "KTEK.webp",
+    logo: `${process.env.PUBLIC_URL}/images/KTEK.webp`,
     company: 'K-Tek Resourcing',
     role: 'IT Analyst',
     description: [
@@ -62,7 +62,7 @@ const workHistoryData = [
   },
   {
     id: 6,
-    logo: "HCL2.webp",
+    logo: `${process.env.PUBLIC_URL}/images/HCL2.webp`,
     company: 'HCL America',
     role: 'IT Analyst',
     description: [
@@ -72,7 +72,7 @@ const workHistoryData = [
   },
   {
     id: 7,
-    logo: "SGS.webp",
+    logo: `${process.env.PUBLIC_URL}/images/SGS.webp`,
     company: 'Southstar Games Studio',
     role: 'Software Developer',
     description: [
@@ -86,7 +86,7 @@ const workHistoryData = [
   },
   {
     id: 8,
-    logo: "Amazon-Logo-Black.webp",
+    logo: `${process.env.PUBLIC_URL}/images/Amazon-Logo-Black.webp`,
     company: 'Amazon',
     role: 'Warehouse Associate',
     description: [
@@ -96,7 +96,7 @@ const workHistoryData = [
   },
   {
     id: 9,
-    logo: "UMClogo.webp",
+    logo: `${process.env.PUBLIC_URL}/images/UMClogo.webp`,
     company: 'Uchiyama Manufacturing Corp.',
     role: 'Machine Operator',
     description: [
@@ -107,7 +107,7 @@ const workHistoryData = [
   },
   {
     id: 10,
-    logo: "KTEK.webp",
+    logo: `${process.env.PUBLIC_URL}/images/SAMS.webp`,
     company: 'Sam\'s Club',
     role: 'Sales Associate',
     description: [
@@ -117,7 +117,7 @@ const workHistoryData = [
   },
   {
     id: 11,
-    logo: "WCC.webp",
+    logo: `${process.env.PUBLIC_URL}/images/WCC.webp`,
     company: 'Wayne Community College',
     role: 'Pre-Curriculum Math Teacher',
     description: [
@@ -127,7 +127,7 @@ const workHistoryData = [
   },
   {
     id: 12,
-    logo: "WCC.webp",
+    logo: `${process.env.PUBLIC_URL}/images/WCC.webp`,
     company: 'Wayne Community College',
     role: 'College Peer Tutor (Mathematics)',
     description: [
