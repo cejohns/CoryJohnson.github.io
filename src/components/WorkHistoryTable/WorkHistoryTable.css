@@ -65,10 +65,14 @@
       position: relative;
     }
     
-    .work-history-table td img {
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
+    .work-history-table img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: contain;
+      border-radius: 4px;
+      background-color: #fff; /* optional: makes transparent logos visible */
+      padding: 4px;            /* optional: adds a bit of spacing */
     }
+    
   }

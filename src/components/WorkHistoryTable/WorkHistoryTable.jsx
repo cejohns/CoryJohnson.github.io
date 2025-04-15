@@ -1,4 +1,5 @@
 import React from 'react';
+import './WorkHistoryTable.css'; // ✅ Add this line
 import workHistoryData from '../../data/workHistoryData'; 
 
 const WorkHistoryTable = () => {
