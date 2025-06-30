@@ -1,78 +1,77 @@
-/* Base table styles */
-.table-container {
-    overflow-x: auto;
-    padding: 1rem;
+/* Work History Table / Card Styles */
+
+.work-history-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.job-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #121212;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+.job-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.job-details {
+  flex: 1;
+}
+
+.job-details h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #f1f1f1;
+}
+
+.job-details h4 {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.job-details p {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+.job-details ul {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+.job-details li {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: #dddddd;
+}
+
+@media (max-width: 768px) {
+  .job-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
-  .work-history-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
+
+  .job-card img {
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
-  
-  .work-history-table th,
-  .work-history-table td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .work-history-table th {
-    background-color: #f8f8f8;
-    font-weight: bold;
-  }
-  
-  .work-history-table img {
-    max-width: 50px;
-    height: auto;
-    border-radius: 4px;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .work-history-table {
-      display: block;
-    }
-    
-    .work-history-table thead {
-      display: none;
-    }
-    
-    .work-history-table tr {
-      display: block;
-      margin-bottom: 1rem;
-      border: 1px solid #ddd;
-    }
-    
-    .work-history-table td {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 8px 10px;
-      border-bottom: 1px solid #eee;
-    }
-    
-    .work-history-table td::before {
-      content: attr(data-label);
-      font-weight: bold;
-      margin-right: 1rem;
-      flex: 1;
-    }
-    
-    .work-history-table td {
-      text-align: right;
-      padding-left: 50%;
-      position: relative;
-    }
-    
-    .work-history-table img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: contain;
-      border-radius: 4px;
-      background-color: #fff; /* optional: makes transparent logos visible */
-      padding: 4px;            /* optional: adds a bit of spacing */
-    }
-    
-  }
+}
+
+.job-card:hover {
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
+  transition: box-shadow 0.3s ease;
+}
