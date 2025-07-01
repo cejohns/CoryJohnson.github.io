@@ -1,6 +1,7 @@
 // src/components/HomeLayout.jsx
 import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
+import EducationSection from '../EducationSection/EducationSection';
 import ProjectSection from './ProjectsSection';
 import GamesSection from './GamesSection';
 import ResumeSection from './ResumeSection';
@@ -12,6 +13,7 @@ export default function HomeLayout() {
     <div className="bg-gray-900 text-white">
       <HeroSection />
       <AboutSection />
+      <EducationSection />
       <ProjectSection />
       <GamesSection />
       <ResumeSection />

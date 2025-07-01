@@ -1,17 +1,12 @@
-import React from 'react';
-import './Footer.css';
-
-const Footer = () => {
-  return (
-    <footer id="footer" className="wrapper alt">
-      <div className="inner">
-        <ul className="menu">
-          <li>&copy; Untitled. All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
+// src/components/Footer.jsx
+export default function Footer() {
+    return (
+      <footer className="mt-16 py-6 border-t border-gray-700 text-center text-sm text-gray-400">
+        <p>© {new Date().getFullYear()} Cory Johns. All rights reserved.</p>
+        <p className="mt-1">
+          Built with <span className="text-pink-400">React</span> &amp; <span className="text-blue-400">Tailwind CSS</span>
+        </p>
+      </footer>
+    );
+  }
+  

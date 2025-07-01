@@ -1,9 +1,9 @@
-import React from 'react';
+import styles from './Button.module.css';
 
 const Button = ({ children, className = '', ...props }) => {
   return (
     <button 
-      className={`px-4 py-2 rounded-md font-medium transition-colors ${className}`}
+      className={`${styles.button} ${className}`}
       {...props}
     >
       {children}

@@ -1,13 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { Code } from "lucide-react";
-
-// Temporary button component (remove when you have a proper Button component)
-const Button = ({ children, className, ...props }) => (
-  <button className={`px-6 py-3 rounded-lg font-medium ${className}`} {...props}>
-    {children}
-  </button>
-);
+import Button from "../ui/Button";  // adjust path if needed
 
 export default function ProjectsSection() {
   return (
