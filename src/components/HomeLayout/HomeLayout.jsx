@@ -1,12 +1,11 @@
-// src/components/HomeLayout.jsx
-import HeroSection from './HeroSection';
-import AboutSection from './AboutSection';
+import HeroSection from '../HeroSection/HeroSection';
+import AboutSection from '../AboutSection/AboutSection';
 import EducationSection from '../EducationSection/EducationSection';
-import ProjectSection from './ProjectsSection';
-import GamesSection from './GamesSection';
-import ResumeSection from './ResumeSection';
-import ContactSection from './ContactSection';
-import Footer from './Footer';
+import ProjectsSection from '../ProjectsSection/ProjectsSection';
+import GamesSection from '../GamesSection/GamesSection';
+import ResumeSection from '../ResumeSection/ResumeSection';
+import ContactSection from '../ContactSection/ContactSection';
+import Footer from '../Footer/Footer';
 
 export default function HomeLayout() {
   return (
@@ -14,7 +13,7 @@ export default function HomeLayout() {
       <HeroSection />
       <AboutSection />
       <EducationSection />
-      <ProjectSection />
+      <ProjectsSection />
       <GamesSection />
       <ResumeSection />
       <ContactSection />

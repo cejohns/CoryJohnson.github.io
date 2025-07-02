@@ -40,7 +40,7 @@ const ContactSection = () => {
 
       <div className="mt-8">
         <Button
-          className="bg-blue-600 hover:bg-blue-700 text-white"
+          variant="primary"
           onClick={() => window.location.href = 'mailto:cejohns3@gmail.com'}
         >
           Send Email

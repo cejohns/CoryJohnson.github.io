@@ -1,3 +1,5 @@
+import Button from '../ui/Button';
+
 export default function HeroSection() {
   return (
     <section className="py-16 bg-gray-900 text-white">
@@ -6,7 +8,6 @@ export default function HeroSection() {
         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500">
           <img
             src={`${process.env.PUBLIC_URL}/images/Cory.webp`}
-            // <- change this to your actual image path
             alt="Cory Johns"
             className="w-full h-full object-cover"
           />
@@ -15,13 +16,17 @@ export default function HeroSection() {
         {/* Name and Title */}
         <div className="text-center md:text-left">
           <h1 className="text-5xl font-bold mb-2">Cory Johns</h1>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-400 mb-6">
             Web Developer • Game Developer • Automation Enthusiast • Software Developer
           </p>
+          <Button
+            variant="primary"
+            onClick={() => window.location.href = '#contact'}
+          >
+            Contact Me
+          </Button>
         </div>
       </div>
     </section>
   );
 }
-
-  

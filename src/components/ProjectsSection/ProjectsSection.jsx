@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { Code } from "lucide-react";
-import Button from "../ui/Button";  // adjust path if needed
+import Button from "../ui/Button";
 
 export default function ProjectsSection() {
   return (
@@ -14,7 +14,7 @@ export default function ProjectsSection() {
       transition={{ duration: 0.8 }}
     >
       <div className="absolute inset-0 bg-[url('/images/dots.svg')] bg-center opacity-10" />
-      
+
       <motion.div 
         className="w-full md:w-1/2 relative z-10"
         initial={{ x: 50 }}
@@ -43,7 +43,7 @@ export default function ProjectsSection() {
         >
           Technical Projects
         </motion.h2>
-        
+
         <motion.p 
           className="text-lg text-gray-300 mb-8 leading-relaxed"
           initial={{ opacity: 0 }}
@@ -52,17 +52,20 @@ export default function ProjectsSection() {
         >
           Explore my open-source contributions, personal projects, and code samples.
         </motion.p>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
           className="flex flex-wrap gap-4"
         >
-          <Button 
-            className="group bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-700 hover:to-amber-900 text-lg px-8 py-6 rounded-xl transition-all"
-          >
-            <a href="https://github.com/cejohns?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <Button variant="secondary">
+            <a
+              href="https://github.com/cejohns?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
               Browse Repositories 
               <Code className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
             </a>

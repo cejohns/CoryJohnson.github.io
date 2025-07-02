@@ -1,10 +1,6 @@
 import React from 'react';
-import Button from "./ui/Button";
-
+import Button from "../ui/Button";
 import { Link } from "react-router-dom";
-
-
-// or whatever your actual path is
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
@@ -19,7 +15,7 @@ export default function ResumeSection() {
       transition={{ duration: 0.5 }}
     >
       <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center opacity-10" />
-      
+
       <motion.div 
         className="w-full md:w-1/2 relative z-10"
         initial={{ x: -50 }}
@@ -48,7 +44,7 @@ export default function ResumeSection() {
         >
           Professional Experience
         </motion.h2>
-        
+
         <motion.p 
           className="text-lg text-gray-300 mb-8 leading-relaxed"
           initial={{ opacity: 0 }}
@@ -57,20 +53,18 @@ export default function ResumeSection() {
         >
           Explore my extensive work history, technical education, and professional skillset developed over years of hands-on experience in software development and game design.
         </motion.p>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
         >
-  <Button className="group">
-  <Link to="/workhistory" className="flex items-center">
-    View Full Experience 
-    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-  </Link>
-</Button>
-
-
+          <Button variant="primary" className="group">
+            <Link to="/workhistory" className="flex items-center">
+              View Full Experience 
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </Button>
         </motion.div>
       </motion.div>
     </motion.section>

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../ui/Button";  // adjust path if needed
+import Button from "../ui/Button";  
 
 export default function AboutSection() {
   return (
@@ -13,8 +13,9 @@ export default function AboutSection() {
         <br />
         I'm also the developer behind South Star Game Studios, where I combine my love for gaming and tech to build creative and engaging experiences. Whether I'm designing tools, building web applications, or working on a new game, I’m always driven by the challenge of solving problems and bringing ideas to life through code.
       </p>
+      
       <Button
-        className="bg-blue-600 hover:bg-blue-700 text-white"
+        variant="primary"
         onClick={() => window.location.href = '#contact'}
       >
         Get in Touch

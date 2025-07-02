@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { Gamepad2 } from "lucide-react";
-import Button from '../ui/Button';  // ✅ Import your shared Button component
+import Button from '../ui/Button';
 
 export default function GamesSection() {
   return (
@@ -29,11 +29,11 @@ export default function GamesSection() {
         </p>
         
         <Button
+          variant="secondary"
           as="a"
           href="https://southstargamesstudios.itch.io/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-purple-600 hover:bg-purple-700 text-white"
         >
           <Gamepad2 className="inline mr-2" />
           Go to Site
