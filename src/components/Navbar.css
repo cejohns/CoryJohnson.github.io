@@ -1,0 +1,23 @@
+.navbar {
+  @apply bg-gray-900 text-white sticky top-0 z-50 shadow-md;
+}
+
+.navbar-container {
+  @apply max-w-6xl mx-auto flex items-center justify-between px-6 py-4;
+}
+
+.navbar-brand {
+  @apply text-2xl font-bold tracking-wide;
+}
+
+.navbar-toggle {
+  @apply text-white focus:outline-none;
+}
+
+.navbar-links {
+  @apply flex-col space-y-4 md:space-y-0 md:flex-row md:gap-6 bg-gray-900 md:bg-transparent p-4 md:p-0;
+}
+
+.navbar-link {
+  @apply text-gray-300 hover:text-blue-400 transition duration-200;
+}

@@ -1,19 +1,47 @@
-// components/Navbar.jsx
-import { Link } from 'react-scroll';
-
-<Link to="ResumeSection" smooth={true} duration={500}>
-  Go to Resume
-</Link>
-
+import { useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
+import { Menu, X } from 'lucide-react';
+import './Navbar.css';
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="bg-gray-900 text-white px-6 py-4 flex space-x-6">
-      <Link to="/">Home</Link>
-      <Link to="/games">Games</Link>
-      <Link to="/education">Education</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/contact">Contact</Link>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-brand">
+          Cory Johnson
+        </div>
+
+        <button
+          className="navbar-toggle md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        <div className={`navbar-links ${isOpen ? 'block' : 'hidden'} md:flex`}>
+          <HashLink smooth to="/" className="navbar-link" onClick={() => setIsOpen(false)}>
+            Home
+          </HashLink>
+          <HashLink smooth to="/#about" className="navbar-link" onClick={() => setIsOpen(false)}>
+            About
+          </HashLink>
+          <HashLink smooth to="/#education" className="navbar-link" onClick={() => setIsOpen(false)}>
+            Education
+          </HashLink>
+          <HashLink smooth to="/#projects" className="navbar-link" onClick={() => setIsOpen(false)}>
+            Projects
+          </HashLink>
+          <HashLink smooth to="/#games" className="navbar-link" onClick={() => setIsOpen(false)}>
+            Games
+          </HashLink>
+          <HashLink smooth to="/#contact" className="navbar-link" onClick={() => setIsOpen(false)}>
+            Contact
+          </HashLink>
+        </div>
+      </div>
     </nav>
   );
 }
