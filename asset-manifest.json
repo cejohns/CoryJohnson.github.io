@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CoryJohnson.github.io/static/css/main.75a43f0c.css",
-    "main.js": "/CoryJohnson.github.io/static/js/main.7b051e71.js",
+    "main.css": "/CoryJohnson.github.io/static/css/main.bfb2f158.css",
+    "main.js": "/CoryJohnson.github.io/static/js/main.d7c56a00.js",
     "index.html": "/CoryJohnson.github.io/index.html",
-    "main.75a43f0c.css.map": "/CoryJohnson.github.io/static/css/main.75a43f0c.css.map",
-    "main.7b051e71.js.map": "/CoryJohnson.github.io/static/js/main.7b051e71.js.map"
+    "main.bfb2f158.css.map": "/CoryJohnson.github.io/static/css/main.bfb2f158.css.map",
+    "main.d7c56a00.js.map": "/CoryJohnson.github.io/static/js/main.d7c56a00.js.map"
   },
   "entrypoints": [
-    "static/css/main.75a43f0c.css",
-    "static/js/main.7b051e71.js"
+    "static/css/main.bfb2f158.css",
+    "static/js/main.d7c56a00.js"
   ]
 }
