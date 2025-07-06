@@ -1,0 +1,53 @@
+/* HomeLayout.css */
+
+/* Overall layout wrapper */
+.home-layout {
+  background-color: #000; /* solid black background */
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* All section blocks */
+.home-section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Add red border separator for brand consistency */
+.home-section:not(:last-child) {
+  border-bottom: 1px solid #ff0000;
+}
+
+/* Headings in each section */
+.home-section h2 {
+  color: #ff0000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph styling */
+.home-section p {
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+/* Links in main content area */
+.home-section a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.home-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive padding adjustments */
+@media (min-width: 768px) {
+  .home-section {
+    padding: 4rem 2rem;
+  }
+}

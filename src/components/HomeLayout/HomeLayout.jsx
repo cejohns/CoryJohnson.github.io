@@ -1,4 +1,5 @@
-import Navbar from '../Navbar'; // ✅ Add this import
+import Navbar from '../Navbar/Navbar';
+
 import HeroSection from '../HeroSection/HeroSection';
 import AboutSection from '../AboutSection/AboutSection';
 import EducationSection from '../EducationSection/EducationSection';
@@ -7,37 +8,38 @@ import GamesSection from '../GamesSection/GamesSection';
 import ResumeSection from '../ResumeSection/ResumeSection';
 import ContactSection from '../ContactSection/ContactSection';
 import Footer from '../Footer/Footer';
+import './HomeLayout.css';
 
 export default function HomeLayout() {
   return (
-    <div className="bg-gray-900 text-white">
-      <Navbar />  {/* ✅ This is what makes it show up! */}
+    <div className="home-layout">
+     
 
-      <section id="hero">
+      <section id="hero" className="home-section">
         <HeroSection />
       </section>
-
-      <section id="about">
+       <Navbar />
+      <section id="about" className="home-section">
         <AboutSection />
       </section>
 
-      <section id="education">
+      <section id="education" className="home-section">
         <EducationSection />
       </section>
 
-      <section id="projects">
+      <section id="projects" className="home-section">
         <ProjectsSection />
       </section>
 
-      <section id="games">
+      <section id="games" className="home-section">
         <GamesSection />
       </section>
 
-      <section id="resume">
+      <section id="resume" className="home-section">
         <ResumeSection />
       </section>
 
-      <section id="contact">
+      <section id="contact" className="home-section">
         <ContactSection />
       </section>
 

@@ -1,0 +1,76 @@
+/* NAVBAR BASE STYLING */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid #ff0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+
+/* NAVBAR CONTAINER (Optional if used in JSX) */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BRAND / TITLE */
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ff0000;
+  text-decoration: none;
+}
+
+/* BURGER BUTTON (optional if used) */
+.navbar-toggle {
+  color: #ff0000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* SUPER-STRONG SELECTOR FOR LINKS */
+.navbar .navbar-link {
+  color: #ff0000;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 3.5rem !important;  /* Mobile size enforced */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s;
+}
+
+.navbar .navbar-link:hover {
+  color: #ff6666;
+}
+
+/* RESPONSIVE SIZE FOR DESKTOP */
+@media (min-width: 768px) {
+  .navbar .navbar-link {
+    font-size: 1.25rem !important; /* Desktop size enforced */
+  }
+}
+
+/* Existing styling above... */
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-links {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 0;
+  }
+}
