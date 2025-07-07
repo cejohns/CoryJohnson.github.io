@@ -25,7 +25,7 @@ export default function EducationSection() {
         transition={{ type: "spring", stiffness: 100 }}
       >
         <motion.img
-          src={`${process.env.PUBLIC_URL}/images/education-hero.jpg`}
+          src={`${process.env.PUBLIC_URL}/images/OIP.jpg`}
           alt="Educational Background"
           className="w-full h-auto max-h-[80vh] object-cover rounded-xl shadow-2xl"
           whileHover={{ scale: 1.02 }}
