@@ -1,131 +1,140 @@
-// src/components/ProjectsSection.jsx
-import React from "react";
-import { softwareProjects, gameProjects } from "../data/projectsData";
+// src/components/ProjectsSection/ProjectsSection.jsx
+import './ProjectsSection.css';
+import { softwareProjects, gameProjects } from '../../data/projectsData';
 
-function ProjectsGrid({ title, projects }) {
-  if (!projects?.length) return null;
+function SoftwareProjectCard({ project }) {
+  const { icon, title, summary, techSummary, metric, links } = project;
 
   return (
-    <section className="mt-10">
-      <header className="mb-6">
-        <p className="text-xs font-semibold tracking-[0.25em] text-pink-400 uppercase">
-          {title}
-        </p>
+    <article className="project-card">
+      <header className="project-card-header">
+        {icon && <div className="project-card-icon">{icon}</div>}
+        <h3 className="project-card-title">{title}</h3>
       </header>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        {projects.map((project) => (
-          <article
-            key={project.id}
-            className="group relative flex flex-col rounded-2xl border border-slate-800/80 bg-gradient-to-b from-slate-900/90 to-slate-950/90 p-5 md:p-6 shadow-lg shadow-black/40"
+      {summary && <p className="project-card-summary">{summary}</p>}
+
+      {techSummary && (
+        <p className="project-card-tech">
+          <span className="project-card-label">Tech:</span> {techSummary}
+        </p>
+      )}
+
+      {metric && <p className="project-card-metric">▲ {metric}</p>}
+
+      <div className="project-card-links">
+        {links?.github && (
+          <a
+            href={links.github}
+            target="_blank"
+            rel="noreferrer"
+            className="project-link"
           >
-            {/* Title row */}
-            <div className="flex items-start justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900/80 border border-slate-700/70 text-lg">
-                  <span aria-hidden="true">{project.icon}</span>
-                </div>
-                <div>
-                  <h3 className="text-lg md:text-xl font-semibold">
-                    {project.title}
-                  </h3>
-                </div>
-              </div>
-            </div>
+            🔗 GitHub
+          </a>
+        )}
 
-            {/* Summary */}
-            <p className="mt-3 text-sm text-slate-200">
-              {project.summary}
-            </p>
-
-            {/* Tech */}
-            <p className="mt-3 text-xs font-medium text-slate-400">
-              Tech: <span className="text-slate-200">{project.techSummary}</span>
-            </p>
-
-            {/* Metric (optional, but we added them) */}
-            {project.metric && (
-              <p className="mt-3 text-xs text-emerald-300/90">
-                ▲ {project.metric}
-              </p>
-            )}
-
-            {/* Links */}
-            <div className="mt-4 flex flex-wrap gap-3 text-xs font-medium">
-              {project.links?.github && (
-                <a
-                  href={project.links.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full border border-slate-600 px-3 py-1 hover:border-pink-400 hover:text-pink-300 transition"
-                >
-                  🔗 GitHub
-                </a>
-              )}
-              {project.links?.live && (
-                <a
-                  href={project.links.live}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full bg-pink-500 px-3 py-1 text-slate-950 hover:bg-pink-400 transition"
-                >
-                  🌐 Live Site
-                </a>
-              )}
-              {project.links?.demo && (
-                <a
-                  href={project.links.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full border border-slate-600 px-3 py-1 hover:border-pink-400 hover:text-pink-300 transition"
-                >
-                  🎥 Demo
-                </a>
-              )}
-            </div>
-          </article>
-        ))}
+        {links?.live && (
+          <a
+            href={links.live}
+            target="_blank"
+            rel="noreferrer"
+            className="project-link project-link-muted"
+          >
+            🌐 Live
+          </a>
+        )}
       </div>
-    </section>
+    </article>
+  );
+}
+
+function GameProjectCard({ project }) {
+  const { icon, title, summary, techSummary, metric, links } = project;
+
+  return (
+    <article className="game-card">
+      <header className="game-card-header">
+        {icon && <div className="game-card-icon">{icon}</div>}
+        <h3 className="game-card-title">{title}</h3>
+      </header>
+
+      {summary && <p className="game-card-summary">{summary}</p>}
+
+      {techSummary && (
+        <p className="game-card-tech">
+          <span className="game-card-label">Tech:</span> {techSummary}
+        </p>
+      )}
+
+      {metric && <p className="game-card-metric">▲ {metric}</p>}
+
+      <div className="game-card-links">
+        {links?.github && (
+          <a
+            href={links.github}
+            target="_blank"
+            rel="noreferrer"
+            className="project-link"
+          >
+            🔗 GitHub
+          </a>
+        )}
+
+        {links?.demo && (
+          <a
+            href={links.demo}
+            target="_blank"
+            rel="noreferrer"
+            className="project-link project-link-muted"
+          >
+            🎥 Demo
+          </a>
+        )}
+      </div>
+    </article>
   );
 }
 
 export default function ProjectsSection() {
   return (
-    <section
-      id="projects"
-      className="bg-slate-950 text-white border-t border-slate-800/70"
-    >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        {/* Main header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
-          <div>
-            <p className="text-xs font-semibold tracking-[0.25em] text-pink-400 uppercase">
-              Featured Work
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-              Projects & Systems
-            </h2>
-            <p className="mt-3 text-sm md:text-base text-slate-300 max-w-2xl">
-              Software platforms, MES tooling, gaming content systems, and 
-              gameplay prototypes that show how I think about real products 
-              and player experiences.
-            </p>
+    <div className="projects-section">
+      <div className="projects-inner">
+        {/* Overall header */}
+        <header className="projects-header">
+          <p className="section-kicker">FEATURED WORK</p>
+          <h2 className="projects-title">Projects</h2>
+          <p className="projects-intro">
+            Software platforms, MES tooling, and game systems that show how I
+            design, ship, and support real products and player experiences.
+          </p>
+        </header>
+
+        {/* Software grid (layout A) */}
+        <section className="projects-group">
+          <h3 className="projects-group-title">Software &amp; Web Projects</h3>
+          <div className="software-grid">
+            {softwareProjects.map((project) => (
+              <SoftwareProjectCard key={project.id} project={project} />
+            ))}
           </div>
-        </div>
+        </section>
 
-        {/* Software & Web Projects */}
-        <ProjectsGrid
-          title="Software & Web Projects"
-          projects={softwareProjects}
-        />
-
-        {/* Game Development Projects */}
-        <ProjectsGrid
-          title="Game Development Projects"
-          projects={gameProjects}
-        />
+        {/* Games carousel (layout C) */}
+        <section className="projects-group">
+          <h3 className="projects-group-title">Game Development Projects</h3>
+          <p className="games-carousel-hint">
+            Swipe / scroll horizontally to explore game projects.
+          </p>
+          <div className="games-carousel">
+            <div className="games-track">
+              {gameProjects.map((project) => (
+                <GameProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   );
 }

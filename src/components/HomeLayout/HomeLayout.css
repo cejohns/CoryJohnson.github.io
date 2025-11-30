@@ -2,18 +2,23 @@
 
 /* Overall layout wrapper */
 .home-layout {
-  background-color: #000; /* solid black background */
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  scroll-behavior: smooth;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* the background now lives on body, so just let it show through */
 }
 
-/* All section blocks */
+/* Every major section shares these rules */
 .home-section {
-  padding: 3rem 1rem;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* A subtle divider between sections (the red lines you already have) */
+.home-section + .home-section {
+  border-top: 1px solid rgba(248, 113, 113, 0.35);
 }
 
 /* Add red border separator for brand consistency */

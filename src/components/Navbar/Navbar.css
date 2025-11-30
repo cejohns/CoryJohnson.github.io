@@ -1,76 +1,109 @@
-/* Header wrapper */
-.site-header {
-  width: 100%;
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  /* Transparent dark bar with a bit of blur so it feels like glass over the hero */
+  background: rgba(3, 7, 18, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(248, 113, 113, 0.35);
 }
 
-/* Banner image strip */
-.navbar-banner {
-  width: 100%;
-  overflow: hidden;
-  background-color: #020617; /* fallback color behind image */
+/* Centered to match the rest of the layout */
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar-banner img {
-  display: block;
-  width: 100%;
-  max-height: 180px;     /* adjust to taste */
-  object-fit: cover;
-}
-
-/* Brand text on the left */
+/* Brand / name */
 .navbar-brand {
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #e5e7eb;
-  text-decoration: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: #f9fafb;
+  font-size: 0.82rem;
   font-weight: 600;
-  padding-right: 1rem;
-  white-space: nowrap;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
 }
 
 .navbar-brand:hover {
   color: #f97316;
 }
 
-/* Links container (we also use Tailwind for layout) */
+/* Toggle (mobile only) */
+.navbar-toggle {
+  border: none;
+  background: transparent;
+  color: #e5e7eb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Links container */
 .navbar-links {
-  background-color: #000000;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  padding: 0.75rem 1rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
 }
 
-@media (min-width: 768px) {
-  .navbar-links {
-    position: static;
-    background-color: transparent;
-    padding: 0;
-    display: flex !important;
-    gap: 0.75rem;
-  }
-}
-
-/* Individual nav links */
+/* Base link style */
 .navbar-link {
-  display: block;
-  padding: 0.4rem 0.75rem;
-  border-radius: 999px;
   font-size: 0.9rem;
   color: #e5e7eb;
   text-decoration: none;
-  transition: background-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
+  position: relative;
+  padding-bottom: 0.15rem;
+}
+
+/* Underline hover effect */
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, #f97316, #ec4899);
+  transition: width 0.18s ease;
 }
 
 .navbar-link:hover {
-  color: #f97316;
-  background-color: rgba(15, 23, 42, 0.9);
-  transform: translateY(-1px);
+  color: #ffffff;
 }
 
-.navbar-link:focus-visible {
-  outline: 2px solid #f97316;
-  outline-offset: 2px;
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* When mobile menu is open */
+.navbar-links-open {
+  display: flex;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .navbar-inner {
+    padding: 0.85rem 1.5rem;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
 }

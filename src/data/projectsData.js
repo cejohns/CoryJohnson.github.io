@@ -67,11 +67,12 @@ export const gameProjects = [
     icon: "🎲",
     title: "Match-3 Game Prototype",
     summary:
-      "A Unity match-3 prototype with tile matching, cascades, power-ups, chapter progression, unlocks, and a multi-slot save/load system.",
-    techSummary: "Unity · C# · Scriptable Objects",
-    metric: "Built as a systems-focused prototype for future live-ops and content updates.",
+      "A Unity match-3 prototype featuring tile matching, cascades, power-ups, chapter progression, unlocks, and a multi-slot save/load system.",
+    techSummary: "Unity · C# · Scriptable Objects · Custom Board/Match Logic",
+    metric:
+      "Implements a full puzzle loop with goals, cascades, power-ups, and 3-slot save/load for future live-ops content.",
     links: {
-      github: "https://github.com/cejohns", // update to match-3 repo
+      github: "https://github.com/cejohns", // TODO: point to the match-3 repo
       demo: null, // or a video / itch.io link later
     },
   },
@@ -81,11 +82,13 @@ export const gameProjects = [
     icon: "🥋",
     title: "UE5 Fighting Game Prototype",
     summary:
-      "A 3D fighting game prototype with arena layout, input system, training-style arena, and early combat logic — designed for future modding support.",
-    techSummary: "Unreal Engine 5 · Blueprints + C++ basics",
-    metric: "Structured as a foundation for future netcode, modding, and ranked play.",
+      "A 3D fighting game prototype with training-style arena, input system, early combat logic, and a foundation for modding and online play.",
+    techSummary:
+      "Unreal Engine 5 · Blueprint Gameplay Framework · C++ Extensions · Input/Camera Systems",
+    metric:
+      "Structured with modular Blueprint/C++ architecture for future rollback netcode, mod support, and ranked matchmaking.",
     links: {
-      github: "https://github.com/cejohns", // update to UE5 fighter repo
+      github: "https://github.com/cejohns", // TODO: link to UE5 fighting game repo
       demo: null,
     },
   },

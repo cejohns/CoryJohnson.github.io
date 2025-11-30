@@ -1,53 +1,66 @@
-import React from 'react';
-import Button from '../ui/Button';
+import './ContactSection.css';
 
-const ContactSection = () => {
+export default function ContactSection() {
   return (
-    <section className="px-6 py-12 bg-gray-900 text-white text-center">
-      <h1 className="text-4xl font-bold mb-4">Contact Me</h1>
-      <p className="text-lg mb-6">
-        You can reach me via email or connect through social media.
-      </p>
+    <section id="contact" className="contact-section">
+      <div className="contact-inner">
+        <div className="contact-card">
+          <header className="contact-header">
+            <p className="section-kicker">GET IN TOUCH</p>
+            <h2 className="contact-title">Contact Me</h2>
+            <p className="contact-subtitle">
+              Open to mid-level software engineering, full-stack, and gameplay
+              roles — remote or in North Carolina. Feel free to reach out about
+              roles, collaborations, or contract work.
+            </p>
+          </header>
 
-      <p className="text-xl mb-8">
-        📧 Email:{' '}
-        <a
-          href="mailto:cejohns3@gmail.com"
-          className="text-blue-400 underline hover:text-blue-600"
-        >
-          cejohns3@gmail.com
-        </a>
-      </p>
+          <div className="contact-body">
+            <div className="contact-row">
+              <span className="contact-label">Email</span>
+              <a
+                href="mailto:cejohns3@gmail.com"
+                className="contact-value contact-link"
+              >
+                cejohns3@gmail.com
+              </a>
+            </div>
 
-      <div className="flex justify-center space-x-4 text-2xl mb-8">
-        <a
-          href="https://github.com/cejohns"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-500"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/cejohnson54/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-500"
-        >
-          LinkedIn
-        </a>
-      </div>
+            <div className="contact-row">
+              <span className="contact-label">GitHub</span>
+              <a
+                href="https://github.com/cejohns"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-value contact-link"
+              >
+                github.com/cejohns
+              </a>
+            </div>
 
-      <div className="mt-8">
-        <Button
-          variant="primary"
-          onClick={() => window.location.href = 'mailto:cejohns3@gmail.com'}
-        >
-          Send Email
-        </Button>
+            <div className="contact-row">
+              <span className="contact-label">LinkedIn</span>
+              <a
+                href="https://www.linkedin.com/in/coryevanjohnson"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-value contact-link"
+              >
+                linkedin.com/in/coryevanjohnson
+              </a>
+            </div>
+          </div>
+
+          <div className="contact-actions">
+            <a
+              href="mailto:cejohns3@gmail.com?subject=Hi%20Cory%20%E2%80%94%20Let%27s%20Connect"
+              className="contact-button"
+            >
+              Send Me an Email
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
-};
-
-export default ContactSection;
+}
