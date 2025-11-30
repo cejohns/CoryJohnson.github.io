@@ -7,7 +7,7 @@ const gamePortfolioData = [
     date: '2024',
     description: [
       'Plugin to import MUGEN and Fighter Factory data into UE5.',
-      'Includes move sets, hitboxes, sprites, and mod support.'
+      'Handles move sets, hitboxes, sprites, and mod support for custom fighters.'
     ],
     link: 'https://github.com/cejohns/FightManufacturing'
   },
@@ -18,8 +18,8 @@ const gamePortfolioData = [
     role: 'Online Multiplayer Fighting Game',
     date: '2024 - Present',
     description: [
-      'Full fighting game in Unreal Engine 5.',
-      'Online matchmaking, story mode, AI tiers, replay system, mod support.'
+      '3D fighting game built in Unreal Engine 5 with a training-style arena and core combat systems.',
+      'Planned features include online matchmaking, story mode, AI tiers, replay system, and mod support.'
     ],
     link: 'https://github.com/cejohns/UE5-Fighting-Game'
   },
@@ -30,8 +30,8 @@ const gamePortfolioData = [
     role: 'Steam/Xbox/PS Digital Keys',
     date: '2023 - 2024',
     description: [
-      'React + Node.js store for selling game keys.',
-      'Integrates price syncing and order fulfillment.'
+      'React + Node.js storefront for selling Steam, Xbox, and PlayStation keys.',
+      'Integrates price syncing and order fulfillment using distributor APIs.'
     ],
     link: 'https://github.com/cejohns/GameKeyStore'
   },
@@ -42,7 +42,7 @@ const gamePortfolioData = [
     title: 'Whiteboard Math: The Collection',
     date: 'Nov 2022 - Jan 2023',
     description: [
-      'This game focuses on several math subjects to test knowledge in those areas.',
+      'Collection of math-focused mini-games across several subjects to test knowledge and speed.',
       '.NET Framework, Computer Programming, Game Publishing'
     ]
   },
@@ -51,7 +51,7 @@ const gamePortfolioData = [
     title: 'GPA Calculator',
     date: 'Sep 2017',
     description: [
-      'Simple software that calculates your GPA for high school and college.',
+      'Standalone tool that calculates GPA for high school and college students.',
       '.NET Framework, Mathematics, Computer Programming, Software Development, Game Publishing, Visual Studio'
     ]
   },
@@ -60,7 +60,7 @@ const gamePortfolioData = [
     title: 'Soccer Foos',
     date: 'Sep 2017',
     description: [
-      'A pong-style game focused on scoring goals instead of hitting walls for points.',
+      'Pong-style soccer game focused on scoring goals instead of wall bounces.',
       '.NET Framework, Mathematics, Game Programming, Software Development, Game Development, Networking, Game Publishing, Visual Studio'
     ]
   },
@@ -69,7 +69,7 @@ const gamePortfolioData = [
     title: 'Whiteboard Math: Preschool',
     date: 'Sep 2017',
     description: [
-      'Another game in The Whiteboard Franchise, focusing on the preschool audience.',
+      'Preschool-focused entry in the Whiteboard series for early math practice.',
       '.NET Framework, Mathematics, Game Programming, Software Development, Game Development, Game Publishing, Visual Studio'
     ]
   },
@@ -87,7 +87,7 @@ const gamePortfolioData = [
     title: 'Whiteboard Math: The Algebras',
     date: 'Aug 2017',
     description: [
-      'Practice Algebra concepts with fun challenges and high-score play.',
+      'Practice Algebra concepts with challenges and high-score competition.',
       '.NET Framework, Mathematics, Game Programming, Software Development, Game Development, Game Publishing, Visual Studio'
     ]
   },
@@ -96,7 +96,7 @@ const gamePortfolioData = [
     title: 'SSG Stock Monitor',
     date: 'Oct 2016',
     description: [
-      'App displaying stock charts from Yahoo Finance API with options for 1-5 year ranges.',
+      'App displaying stock charts from Yahoo Finance API with options for 1–5 year ranges.',
       '.NET Framework, Mathematics, Software Development, Networking, Visual Studio'
     ]
   },
@@ -105,7 +105,7 @@ const gamePortfolioData = [
     title: 'Simple Math Game',
     date: 'May 2016',
     description: [
-      'Remake using Unity featuring basic computations from arithmetic to trigonometry.',
+      'Unity remake featuring computations from arithmetic up through trigonometry.',
       '.NET Framework, Mathematics, Game Programming, Software Development, Game Development, Game Publishing, Visual Studio'
     ]
   },
@@ -114,7 +114,7 @@ const gamePortfolioData = [
     title: 'LightsOut!',
     date: 'Dec 2007',
     description: [
-      'A math quiz game made using Game Maker.',
+      'Math quiz game created using Game Maker.',
       '.NET Framework, Mathematics, Game Programming, Software Development, Game Development, Game Publishing'
     ]
   },
@@ -125,7 +125,7 @@ const gamePortfolioData = [
     title: 'ShooterGame',
     date: 'N/A',
     description: [
-      'Focus on combat systems, input handling, and camera logic.'
+      'Prototype focusing on combat systems, input handling, and camera logic.'
     ]
   },
   {
@@ -133,7 +133,7 @@ const gamePortfolioData = [
     title: 'SimpleMathGame',
     date: 'N/A',
     description: [
-      'Educational gameplay with progression design and user interface.'
+      'Educational gameplay prototype with progression design and UI elements.'
     ]
   },
   {
@@ -141,7 +141,7 @@ const gamePortfolioData = [
     title: 'Voice-Control',
     date: 'N/A',
     description: [
-      'Explores alternative UX and voice input integration.'
+      'Experiment with alternative UX and voice input integration into gameplay.'
     ]
   },
   {
@@ -149,15 +149,15 @@ const gamePortfolioData = [
     title: 'SoccerFoos',
     date: 'N/A',
     description: [
-      'Core gameplay loop with physics and scoring systems.'
+      'Core gameplay loop with physics and scoring systems for a soccer-inspired arcade game.'
     ]
   },
   {
     id: 17,
     title: 'SouthstarCasinoProject',
-    date: 'N/A',
+    date: '2023',
     description: [
-      'Reward systems, randomness, UI feedback, and player engagement.'
+      'Casino simulation focusing on reward systems, randomness, UI feedback, and player engagement.'
     ]
   }
 ];

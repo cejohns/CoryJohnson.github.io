@@ -1,76 +1,76 @@
-/* NAVBAR BASE STYLING */
-.navbar {
-  background-color: #000;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  border-bottom: 1px solid #ff0000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  
+/* Header wrapper */
+.site-header {
+  width: 100%;
 }
 
-/* NAVBAR CONTAINER (Optional if used in JSX) */
-.navbar-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Banner image strip */
+.navbar-banner {
+  width: 100%;
+  overflow: hidden;
+  background-color: #020617; /* fallback color behind image */
 }
 
-/* BRAND / TITLE */
+.navbar-banner img {
+  display: block;
+  width: 100%;
+  max-height: 180px;     /* adjust to taste */
+  object-fit: cover;
+}
+
+/* Brand text on the left */
 .navbar-brand {
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ff0000;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #e5e7eb;
   text-decoration: none;
+  font-weight: 600;
+  padding-right: 1rem;
+  white-space: nowrap;
 }
 
-/* BURGER BUTTON (optional if used) */
-.navbar-toggle {
-  color: #ff0000;
-  background: none;
-  border: none;
-  cursor: pointer;
+.navbar-brand:hover {
+  color: #f97316;
 }
 
-/* SUPER-STRONG SELECTOR FOR LINKS */
-.navbar .navbar-link {
-  color: #ff0000;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 3.5rem !important;  /* Mobile size enforced */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  transition: color 0.3s;
-}
-
-.navbar .navbar-link:hover {
-  color: #ff6666;
-}
-
-/* RESPONSIVE SIZE FOR DESKTOP */
-@media (min-width: 768px) {
-  .navbar .navbar-link {
-    font-size: 1.25rem !important; /* Desktop size enforced */
-  }
-}
-
-/* Existing styling above... */
-
+/* Links container (we also use Tailwind for layout) */
 .navbar-links {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 1rem;
+  background-color: #000000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 0.75rem 1rem;
 }
 
 @media (min-width: 768px) {
   .navbar-links {
-    flex-direction: row;
-    gap: 3rem;
+    position: static;
+    background-color: transparent;
     padding: 0;
+    display: flex !important;
+    gap: 0.75rem;
   }
+}
+
+/* Individual nav links */
+.navbar-link {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+.navbar-link:hover {
+  color: #f97316;
+  background-color: rgba(15, 23, 42, 0.9);
+  transform: translateY(-1px);
+}
+
+.navbar-link:focus-visible {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
 }

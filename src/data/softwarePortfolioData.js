@@ -6,8 +6,8 @@ const softwarePortfolioData = [
     role: 'Selenium Bot',
     date: '2024',
     description: [
-      'Automates scraping jobs, filling forms, and sending outreach emails.',
-      'Uses Python + Selenium.'
+      'Automates scraping jobs, filling application forms, and sending outreach emails.',
+      'Built with Python + Selenium to reduce repetitive manual job application work.'
     ],
     link: 'https://github.com/cejohns/JobAppAutomation'
   },
@@ -18,8 +18,8 @@ const softwarePortfolioData = [
     role: 'React + Node.js CMS',
     date: '2024',
     description: [
-      'Admin panel for posts, reviews, tutorials, galleries.',
-      'Category routing, approvals, content management.'
+      'Full CMS with admin panel for posts, reviews, tutorials, galleries, and videos.',
+      'Includes category routing, approvals, and REST-based content management.'
     ],
     link: 'https://github.com/cejohns/GamingNewsCMS'
   },
@@ -30,8 +30,8 @@ const softwarePortfolioData = [
     role: 'Manufacturing Execution Software',
     date: '2023 - 2024',
     description: [
-      'Shift tracking, task validation, FAI signoff, reporting.',
-      'Built with Node, React, SQL.'
+      'Shift tracking, task validation rules, FAI signoff workflows, and reporting.',
+      'Built with Node, React, and SQL for aerospace-style manufacturing environments.'
     ],
     link: 'https://github.com/cejohns/AerospaceMES'
   },
@@ -42,17 +42,19 @@ const softwarePortfolioData = [
     role: 'Problem Generation Service',
     date: '2024',
     description: [
-      'Generates math problems by topic and difficulty.',
-      'Designed for integration into games or education apps.'
+      'Generates math problems by topic and difficulty for use in games or education apps.',
+      'Provides an API layer designed for integration into other services.'
     ],
     link: 'https://github.com/cejohns/MathAPI'
   },
+
+  // Legacy / additional software projects
   {
     id: 5,
     title: 'GPA Calculator',
     date: 'N/A',
     description: [
-      'C# desktop app to calculate GPA for high school and college.'
+      'C# desktop app to calculate GPA for high school and college students.'
     ]
   },
   {
@@ -60,7 +62,7 @@ const softwarePortfolioData = [
     title: 'SSG Stock Monitor',
     date: 'N/A',
     description: [
-      'C# app using Yahoo Finance API for stock charts and ranges.'
+      'C# app using Yahoo Finance API to display stock charts across 1–5 year ranges.'
     ]
   },
   {
@@ -68,7 +70,7 @@ const softwarePortfolioData = [
     title: 'SouthstarCasinoProject',
     date: 'N/A',
     description: [
-      'Casino simulation with reward systems, randomness, and UI feedback.'
+      'Casino simulation featuring reward systems, randomness, and UI feedback.'
     ]
   },
   {
@@ -76,7 +78,7 @@ const softwarePortfolioData = [
     title: 'JobSearchAutomation',
     date: 'N/A',
     description: [
-      'Python/Selenium automation for job search scraping and auto-applications.'
+      'Python/Selenium automation for scraping job postings and assisting with auto-applications.'
     ]
   },
   {
@@ -84,7 +86,7 @@ const softwarePortfolioData = [
     title: 'PriceSyncer',
     date: 'N/A',
     description: [
-      'Node.js script for syncing distributor prices to store listings.'
+      'Node.js script for syncing distributor prices to store listings for digital goods.'
     ]
   },
   {
@@ -92,7 +94,7 @@ const softwarePortfolioData = [
     title: 'FirestarBlogSite Admin Automation',
     date: 'N/A',
     description: [
-      'Admin panel with approvals, publishing, deleting content via REST API.'
+      'Admin tooling for approvals, publishing, and deleting content via REST APIs.'
     ]
   },
   {
@@ -100,7 +102,7 @@ const softwarePortfolioData = [
     title: 'Responsive-Anime-Web-Design',
     date: 'N/A',
     description: [
-      'HTML/JavaScript site with moving car animation and clip-path transitions.'
+      'HTML/JavaScript site featuring moving car animation and clip-path transitions.'
     ]
   },
   {
@@ -108,7 +110,7 @@ const softwarePortfolioData = [
     title: 'MathProblemWebApp',
     date: 'N/A',
     description: [
-      'C# web app for generating and solving math problems.'
+      'C# web app for generating and solving math problems in a browser.'
     ]
   },
   {
@@ -116,7 +118,7 @@ const softwarePortfolioData = [
     title: 'AeroMEs',
     date: 'N/A',
     description: [
-      'TypeScript-based manufacturing execution system.'
+      'TypeScript-based manufacturing execution system prototype.'
     ]
   },
   {
@@ -124,7 +126,7 @@ const softwarePortfolioData = [
     title: 'Webbrowser',
     date: 'N/A',
     description: [
-      'C# project to demonstrate custom web browsing features.'
+      'C# project demonstrating custom web browsing features and UI.'
     ]
   },
   {
@@ -132,7 +134,7 @@ const softwarePortfolioData = [
     title: 'task-manager-frontend',
     date: 'N/A',
     description: [
-      'Frontend UI for managing tasks in a project or team.'
+      'Frontend UI for managing tasks and statuses for a project or team.'
     ]
   },
   {
@@ -140,7 +142,7 @@ const softwarePortfolioData = [
     title: 'web-sprint-challenge-authentication-and-testing',
     date: 'N/A',
     description: [
-      'JavaScript project focusing on authentication and testing.'
+      'JavaScript project focusing on authentication and testing topics.'
     ]
   },
   {
@@ -148,7 +150,7 @@ const softwarePortfolioData = [
     title: 'web-sprint-challenge-adding-data-persistence',
     date: 'N/A',
     description: [
-      'JavaScript project on data persistence techniques.'
+      'JavaScript project focused on adding data persistence and storage layers.'
     ]
   },
   {
@@ -156,7 +158,7 @@ const softwarePortfolioData = [
     title: 'web-sprint-challenge-build-a-web-api',
     date: 'N/A',
     description: [
-      'JavaScript project building RESTful APIs.'
+      'JavaScript project building and testing RESTful web APIs.'
     ]
   },
   {
@@ -164,7 +166,7 @@ const softwarePortfolioData = [
     title: 'web-sprint-challenge-advanced-web-applications',
     date: 'N/A',
     description: [
-      'JavaScript project with advanced React patterns.'
+      'JavaScript project using advanced React and web application patterns.'
     ]
   },
   {
@@ -172,7 +174,7 @@ const softwarePortfolioData = [
     title: 'node-auth2-project',
     date: 'N/A',
     description: [
-      'JavaScript Node.js project focused on advanced authentication.'
+      'Node.js project focused on advanced authentication patterns and flows.'
     ]
   },
   {
@@ -180,7 +182,7 @@ const softwarePortfolioData = [
     title: 'node-testing2-project',
     date: 'N/A',
     description: [
-      'Node server testing module with HTML/JavaScript.'
+      'Node server testing module with HTML/JavaScript front-end examples.'
     ]
   },
   {
@@ -188,7 +190,7 @@ const softwarePortfolioData = [
     title: 'node-testing1-project',
     date: 'N/A',
     description: [
-      'Node server testing module using JavaScript.'
+      'Node server testing module using JavaScript-based test suites.'
     ]
   },
   {
@@ -196,7 +198,7 @@ const softwarePortfolioData = [
     title: 'node-auth1-project',
     date: 'N/A',
     description: [
-      'JavaScript Web Auth I module challenge.'
+      'JavaScript Web Auth I module challenge building authentication features.'
     ]
   }
 ];

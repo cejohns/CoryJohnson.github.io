@@ -13,12 +13,13 @@ import './HomeLayout.css';
 export default function HomeLayout() {
   return (
     <div className="home-layout">
-     
+      {/* Move Navbar to the top so it’s always visible */}
+      <Navbar />
 
       <section id="hero" className="home-section">
         <HeroSection />
       </section>
-       <Navbar />
+
       <section id="about" className="home-section">
         <AboutSection />
       </section>
