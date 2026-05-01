@@ -2,17 +2,35 @@
 
 export const softwareProjects = [
   {
+    id: "fgn",
+    section: "Software & Web Projects",
+    icon: "🎮",
+    title: "FireStar Gaming Network",
+    summary:
+      "A gaming media platform for news, reviews, guides, releases, videos, and blog content. Built with a modern CMS workflow, admin approvals, SEO-friendly pages, RSS ingestion, AI-assisted publishing, and game data integrations.",
+    techSummary:
+      "Next.js · Supabase · PostgreSQL · Vercel · Edge Functions · RSS APIs · IGDB · RAWG",
+    metric:
+      "Built a scalable gaming content platform with automated news ingestion, admin publishing workflows, and production deployment on Vercel.",
+    links: {
+      github: "https://github.com/cejohns/FGN",
+      live: "https://www.firestargn.com",
+    },
+  },
+  {
     id: "digital-liger",
     section: "Software & Web Projects",
     icon: "🛒",
     title: "Digital Liger Marketplace",
     summary:
-      "A full-stack e-commerce platform for game keys, gift cards, and software subscriptions. Automates product imports, price syncing, and secure order workflows using wholesaler APIs.",
-    techSummary: "React · Node.js · TypeScript · PostgreSQL · REST APIs",
-    metric: "Reduces catalog maintenance by automating 80%+ of product updates.",
+      "A digital commerce platform for game keys, gift cards, and software subscriptions. Designed to support distributor APIs, product imports, price syncing, checkout, inventory updates, and automated order fulfillment.",
+    techSummary:
+      "React · TypeScript · Node.js · Express · PostgreSQL · Stripe · REST APIs",
+    metric:
+      "Designed to reduce manual product management by automating imports, pricing updates, and fulfillment workflows.",
     links: {
-      github: "https://github.com/cejohns", // swap to exact repo when ready
-      live: null, // or "https://digitalliger.example.com" when live
+      github: "https://github.com/cejohns",
+      live: null,
     },
   },
   {
@@ -21,27 +39,30 @@ export const softwareProjects = [
     icon: "🏭",
     title: "AeroSpaceMES",
     summary:
-      "A manufacturing execution system (MES) designed for aerospace workflows with role-based task tracking, QA approvals, and AS9102-style documentation.",
-    techSummary: "React · Node.js · SQLite/PostgreSQL · Playwright · Jest",
-    metric: "Designed to support FAA/AS9102-style compliance workflows.",
+      "An aerospace-focused manufacturing execution system for task tracking, QA sign-offs, AS9102/FAI package workflows, role-based approvals, validation rules, dashboards, shift tracking, and PDF/CSV reporting.",
+    techSummary:
+      "React · Node.js · PostgreSQL · Express · Playwright · Jest · PDF/CSV Export",
+    metric:
+      "Designed compliance-driven workflows for aerospace manufacturing, including QA approvals, work order progression, and AS9102-style documentation.",
     links: {
-      github: "https://github.com/LigerTech-LLC", // update to exact repo
+      github: "https://github.com/LigerTech-LLC",
       live: null,
     },
   },
   {
-    id: "fgn",
+    id: "ligertech-cms",
     section: "Software & Web Projects",
-    icon: "🎮",
-    title: "FireStar Gaming Network",
+    icon: "🧩",
+    title: "LigerTech CMS",
     summary:
-      "A custom CMS and front-end for gaming news, reviews, guides, and video content. Includes admin approvals, media management, and SEO-friendly routing.",
+      "A scalable company CMS for managing LigerTech divisions, corporate pages, news updates, and brand content. Built to support multiple business lines under one web platform.",
     techSummary:
-      "MERN-style full-stack · Tailwind CSS · Admin Panel",
-    metric: "Built to streamline publishing for news, reviews, tutorials, and playthroughs.",
+      "Next.js · Supabase · PostgreSQL · Admin CRUD · Vercel",
+    metric:
+      "Created the foundation for a multi-division CMS supporting company pages, news, and brand content management.",
     links: {
-      github: "https://github.com/FireStarGamingNetwork", // update specific repo
-      live: null, // e.g. "https://firestargn.com" when fully live
+      github: "https://github.com/cejohns",
+      live: null,
     },
   },
   {
@@ -50,11 +71,13 @@ export const softwareProjects = [
     icon: "🤖",
     title: "Job Application Automation Bot",
     summary:
-      "A Python + Selenium tool that automates job form submissions and injects relevant keywords into resumes to increase match rates and save hours each week.",
-    techSummary: "Python · Selenium · HTML DOM parsing",
-    metric: "Cuts manual application time by ~70% for repetitive job boards.",
+      "A Python automation tool for job search workflows, form filling, resume targeting, and application tracking. Built to speed up repetitive application tasks and support customized outreach.",
+    techSummary:
+      "Python · Selenium · Web Scraping · Automation · Resume Optimization",
+    metric:
+      "Built to reduce repetitive job application work and improve resume-job matching through automation.",
     links: {
-      github: "https://github.com/cejohns", // update to specific job bot repo
+      github: "https://github.com/cejohns",
       live: null,
     },
   },
@@ -65,15 +88,16 @@ export const gameProjects = [
     id: "match3",
     section: "Game Development Projects",
     icon: "🎲",
-    title: "Match-3 Game Prototype",
+    title: "Crystal Clash Match-3 Prototype",
     summary:
-      "A Unity match-3 prototype featuring tile matching, cascades, power-ups, chapter progression, unlocks, and a multi-slot save/load system.",
-    techSummary: "Unity · C# · Scriptable Objects · Custom Board/Match Logic",
+      "A Unity match-3 game prototype featuring tile matching, cascades, power-ups, goals, chapter progression, marketplace systems, save slots, and UI screens.",
+    techSummary:
+      "Unity · C# · Scriptable Objects · Custom Board Logic · UI Systems",
     metric:
-      "Implements a full puzzle loop with goals, cascades, power-ups, and 3-slot save/load for future live-ops content.",
+      "Built the core puzzle loop with match detection, cascades, objectives, power-ups, save/load flow, and marketplace foundations.",
     links: {
-      github: "https://github.com/cejohns", // TODO: point to the match-3 repo
-      demo: null, // or a video / itch.io link later
+      github: "https://github.com/cejohns",
+      demo: null,
     },
   },
   {
@@ -82,13 +106,29 @@ export const gameProjects = [
     icon: "🥋",
     title: "UE5 Fighting Game Prototype",
     summary:
-      "A 3D fighting game prototype with training-style arena, input system, early combat logic, and a foundation for modding and online play.",
+      "A 3D fighting game prototype using Unreal Engine 5 with local multiplayer, training-stage arena, input systems, early combat logic, and a foundation for online play, ranked matchmaking, replay systems, and mod support.",
     techSummary:
-      "Unreal Engine 5 · Blueprint Gameplay Framework · C++ Extensions · Input/Camera Systems",
+      "Unreal Engine 5 · Blueprint · C++ · Input Systems · Multiplayer Foundations",
     metric:
-      "Structured with modular Blueprint/C++ architecture for future rollback netcode, mod support, and ranked matchmaking.",
+      "Structured a modular Blueprint/C++ fighting game foundation for future rollback netcode, ranked matchmaking, spectator logic, and modding support.",
     links: {
-      github: "https://github.com/cejohns", // TODO: link to UE5 fighting game repo
+      github: "https://github.com/cejohns",
+      demo: null,
+    },
+  },
+  {
+    id: "ffplugin",
+    section: "Game Development Projects",
+    icon: "🛠️",
+    title: "FightManufacturing / FFPlugin",
+    summary:
+      "A game development tool concept for connecting MUGEN and Fighter Factory data/files into modern engines, with a focus on fighting game workflows and modding support.",
+    techSummary:
+      "Unreal Engine 5 · C++ · Blueprint · MUGEN · Fighter Factory",
+    metric:
+      "Designed as a bridge between legacy fighting game creation tools and modern game development pipelines.",
+    links: {
+      github: "https://github.com/cejohns",
       demo: null,
     },
   },
